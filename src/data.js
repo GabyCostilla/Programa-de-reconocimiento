@@ -1,7 +1,7 @@
 const personas = [
     {
-      nombre: "Juan",
-      descripcion: "Juan es una persona amigable y aventurera, le encanta viajar y probar nuevos deportes.",
+      nombre: "Pahn",
+      descripcion: "es un wachin que anda chill, es un kpo simplemente",
     },
     {
       nombre: "María",
