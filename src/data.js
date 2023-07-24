@@ -1,6 +1,6 @@
 const personas = [
     {
-      nombre: "Pahn",
+      nombre: "Pahan",
       descripcion: "es un wachin que anda chill, es un kpo simplemente",
     },
     {
