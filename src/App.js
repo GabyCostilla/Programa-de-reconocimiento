@@ -34,7 +34,11 @@ function App() {
       <main className="App-main">
         <div className="App-filter">
           <label htmlFor="filtro">Filtrar por:</label>
-          <select id="filtro" value={selectedFilter} onChange={handleFilterChange}>
+          <select
+            id="filtro"
+            value={selectedFilter}
+            onChange={handleFilterChange}
+          >
             <option value="">Todos</option>
             <option value="amigable">ITR</option>
             <option value="creativo">Virtual</option>
@@ -52,17 +56,22 @@ function App() {
             ))}
           </select>
         </div>
-        <CSSTransition in={selectedPersonData != null} timeout={300} classNames="fade" unmountOnExit>
+        <CSSTransition
+          in={selectedPersonData != null}
+          timeout={300}
+          classNames="fade"
+          unmountOnExit
+        >
           <div className="App-description">
             <h2>{selectedPersonData && selectedPersonData.nombre}</h2>
             <p>{selectedPersonData && selectedPersonData.descripcion}</p>
+            <p>Edad: {selectedPersonData && selectedPersonData.edad}</p>
+            <p>Lema: {selectedPersonData && selectedPersonData.lema}</p>
           </div>
         </CSSTransition>
       </main>
       <footer className="App-footer">
-        <p>
-          Desarrollado por [Tu nombre]
-        </p>
+        <p>Desarrollado por GabyCostilla</p>
       </footer>
     </div>
   );
